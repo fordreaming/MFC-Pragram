@@ -501,19 +501,21 @@ UINT RecvThread(LPVOID lpParam)
 
 	//过滤ARP数据包
 	struct bpf_program fcode;
-	if (pcap_compile(pdlg->m_pAdapterHandle, &fcode, "arp", 1, 0) < 0)
+	//编译过滤器
+	if (pcap_compile(pdlg->m_pAdapterHandle, &fcode, "arp", 1, 0) < 0)//将高层的布尔过滤表达式编译成一个能够
+		//被过滤引擎所解释的底层的字节码
 	{
 		MessageBox(NULL, "编译过滤器失败", "note", MB_OK);
 		return 1;
 	}
-
-	if (pcap_setfilter(pdlg->m_pAdapterHandle, &fcode) < 0)
+	//设置过滤器
+	if (pcap_setfilter(pdlg->m_pAdapterHandle, &fcode) < 0)//将过滤器与内核捕获会话相关联
 	{
 		MessageBox(NULL, "设置过滤器失败", "note", MB_OK);
 		return 1;
 	}
 
-	while (g_run == true)		
+	while (g_run == true)
 	{
 		res = pcap_next_ex(pdlg->m_pAdapterHandle, &header, &pkt_data);
 		if (res == 0)						//超时
@@ -538,12 +540,9 @@ UINT RecvThread(LPVOID lpParam)
 			memcpy(HostInfo.mac, ArpHead_Rev->sour_addr, 6);
 
 			//将IP地址与MAC地址的对应信息以消息的形式传回主线程
-			AfxGetApp()->m_pMainWnd->SendMessage(MSG_RECV_ARP, WPARAM(&HostInfo), 0);		
+			AfxGetApp()->m_pMainWnd->SendMessage(MSG_RECV_ARP, WPARAM(&HostInfo), 0);
 		}
 	}
-
-	
-	
 	return 0;
 }
 
