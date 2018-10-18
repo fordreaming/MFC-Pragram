@@ -1,4 +1,6 @@
 
+
+//https://blog.csdn.net/wjeson/article/details/7382364
 // EditControlColorChangeDlg.cpp : 实现文件
 //
 
@@ -165,6 +167,8 @@ HCURSOR CEditControlColorChangeDlg::OnQueryDragIcon()
 }
 
 
+
+
 HBRUSH CEditControlColorChangeDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 {
 	HBRUSH hbr = CDialog::OnCtlColor(pDC, pWnd, nCtlColor);
@@ -173,7 +177,7 @@ HBRUSH CEditControlColorChangeDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlCol
 	switch (nCtlColor) //对所有同一类型的控件进行判断  
 	{  
 		// process my edit controls by ID.  
-	//case CTLCOLOR_EDIT:  
+	case CTLCOLOR_EDIT:  
 	case CTLCOLOR_MSGBOX://假设控件是文本框或者消息框，则进入下一个switch  
 		switch (pWnd->GetDlgCtrlID())//对某一个特定控件进行判断  
 		{      
