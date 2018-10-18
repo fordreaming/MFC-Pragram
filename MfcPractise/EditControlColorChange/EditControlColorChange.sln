@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EditControlColorChange", "EditControlColorChange\EditControlColorChange.vcproj", "{8CC9DF7F-9EE2-474E-BCE3-8E199930BAF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CC9DF7F-9EE2-474E-BCE3-8E199930BAF8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8CC9DF7F-9EE2-474E-BCE3-8E199930BAF8}.Debug|Win32.Build.0 = Debug|Win32
+		{8CC9DF7F-9EE2-474E-BCE3-8E199930BAF8}.Release|Win32.ActiveCfg = Release|Win32
+		{8CC9DF7F-9EE2-474E-BCE3-8E199930BAF8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
