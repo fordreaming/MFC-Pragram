@@ -1,0 +1,456 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\IniDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\IniDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETCKEYDLG DIALOGEX 0, 0, 184, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Section Name:",IDC_STATIC,7,9,48,8
+    COMBOBOX        IDC_SECT,57,7,120,96,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Key Name:",IDC_LBLKEY,7,25,36,8
+    COMBOBOX        IDC_KEY,57,23,120,87,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,42,44,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,92,44,50,14
+END
+
+IDD_INPUTDLG DIALOGEX 0, 0, 177, 85
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Write to the Ini File"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Data to Write",IDC_PROMPT,9,10,161,8
+    EDITTEXT        IDC_EDIT1,7,24,163,13,ES_AUTOHSCROLL
+    LTEXT           "Double Precision:",IDC_LBL,7,46,69,8
+    COMBOBOX        IDC_BASEORPREC,79,44,91,81,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,37,64,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,64,50,14
+END
+
+IDD_BASEDLG DIALOGEX 0, 0, 161, 28
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Select Integer Bases"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,113,7,41,14
+    COMBOBOX        IDC_COMBO1,7,7,103,101,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_ARRAYDLG DIALOGEX 0, 0, 187, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Array of Strings to Write to the Ini File"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,7,7,173,118,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_EDIT1,7,130,128,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_ADD,138,130,42,14
+    DEFPUSHBUTTON   "OK",IDOK,43,152,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,93,152,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SETCKEYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_INPUTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_BASEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+
+    IDD_ARRAYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "Strings"
+    BEGIN
+        MENUITEM "Get String",                  ID_GETSTRING
+        MENUITEM "Write String",                ID_WRITESTRING
+        MENUITEM SEPARATOR
+        MENUITEM "Append String",               ID_APPENDSTRING
+        MENUITEM SEPARATOR
+        MENUITEM "Get Array",                   ID_GETARRAY
+        MENUITEM "Write Array",                 ID_WRITEARRAY
+    END
+    POPUP "Integers"
+    BEGIN
+        MENUITEM "Base",                        ID_BASE
+        MENUITEM SEPARATOR
+        MENUITEM "Get Int",                     ID_GETINT
+        MENUITEM "Write Int",                   ID_WRITEINT
+        MENUITEM SEPARATOR
+        MENUITEM "Increase Int",                ID_INCREASEINT
+    END
+    POPUP "Booleans"
+    BEGIN
+        MENUITEM "Get Bool",                    ID_GETBOOL
+        MENUITEM "Write Bool",                  ID_WRITEBOOL
+        MENUITEM SEPARATOR
+        MENUITEM "Invert Bool",                 ID_INVERTBOOL
+    END
+    POPUP "Doubles"
+    BEGIN
+        MENUITEM "Get Double",                  ID_GETDOUBLE
+        MENUITEM "Write Double",                ID_WRITEDOUBLE
+        MENUITEM SEPARATOR
+        MENUITEM "Increase Double",             ID_INCREASEDOUBLE
+    END
+    POPUP "Structures"
+    BEGIN
+        MENUITEM "GetPoint",                    ID_GETPOINT
+        MENUITEM "Write Point",                 ID_WRITEPOINT
+        MENUITEM SEPARATOR
+        MENUITEM "Get Rect",                    ID_GETRECT
+        MENUITEM "Write Rect",                  ID_WRITERECT
+        MENUITEM SEPARATOR
+        MENUITEM "Get Data Block",              ID_GETBYTES
+        MENUITEM "Write Data Block",            ID_WRITEBYTES
+        MENUITEM "Append Data Block",           ID_APPEND_BLK
+    END
+    POPUP "Sections"
+    BEGIN
+        MENUITEM "Check Existence",             ID_SECTEXIST
+        MENUITEM SEPARATOR
+        MENUITEM "List All Sections",           ID_SECT_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "Copy Section",                ID_SECT_COPY
+        MENUITEM "Delete Section",              ID_SECT_DELETE
+        MENUITEM "Move Section",                ID_SECT_MOVE
+    END
+    POPUP "Keys"
+    BEGIN
+        MENUITEM "Check Existence",             ID_KEYEXIST
+        MENUITEM SEPARATOR
+        MENUITEM "List Key Lines",              ID_KEY_LIST
+        MENUITEM "List Key Names",              ID_KEY_LISTNAME
+        MENUITEM SEPARATOR
+        MENUITEM "Copy Key",                    ID_KEY_COPY
+        MENUITEM "Delete Key",                  ID_KEY_DELETE
+        MENUITEM "Move Key",                    ID_KEY_MOVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_INPUTDLG DLGINIT
+BEGIN
+    IDC_BASEORPREC, 0x403, 10, 0
+0x7541, 0x6f74, 0x616d, 0x6974, 0x0063, 
+    IDC_BASEORPREC, 0x403, 2, 0
+0x0030, 
+    IDC_BASEORPREC, 0x403, 2, 0
+0x0031, 
+    IDC_BASEORPREC, 0x403, 2, 0
+0x0032, 
+    IDC_BASEORPREC, 0x403, 2, 0
+0x0033, 
+    IDC_BASEORPREC, 0x403, 2, 0
+0x0034, 
+    IDC_BASEORPREC, 0x403, 2, 0
+0x0035, 
+    IDC_BASEORPREC, 0x403, 2, 0
+0x0036, 
+    IDC_BASEORPREC, 0x403, 2, 0
+0x0037, 
+    IDC_BASEORPREC, 0x403, 2, 0
+0x0038, 
+    0
+END
+
+IDD_BASEDLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 12, 0
+0x3220, 0x2d20, 0x4220, 0x6e69, 0x7261, 0x0079, 
+    IDC_COMBO1, 0x403, 11, 0
+0x3820, 0x2d20, 0x4f20, 0x7463, 0x6c61, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0x3031, 0x2d20, 0x4420, 0x6365, 0x6d69, 0x6c61, "\000" 
+    IDC_COMBO1, 0x403, 18, 0
+0x3631, 0x2d20, 0x4820, 0x7865, 0x6461, 0x6365, 0x6d69, 0x6c61, 0x0020, 
+
+    0
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About IniDemo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "IniDemo Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003, Abin",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_INIDEMO_DIALOG DIALOGEX 0, 0, 308, 185
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Ini Demo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Ini File Contents View:",IDC_STATIC,7,7,204,8
+    EDITTEXT        IDC_EDIT1,7,20,230,133,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "Select File",IDC_SELFILE,7,161,54,17
+    PUSHBUTTON      "Reload",IDC_RELOAD,66,161,54,17
+    PUSHBUTTON      "About",IDC_ABOUT,125,161,54,17
+    PUSHBUTTON      "Exit",IDCANCEL,183,161,54,17
+    LTEXT           "Operations:",IDC_STATIC,245,7,54,8
+    PUSHBUTTON      "Strings",IDC_STRINGS,245,20,54,17
+    PUSHBUTTON      "Integers",IDC_INT,245,39,54,17
+    PUSHBUTTON      "Bools",IDC_BOOL,245,58,54,17
+    PUSHBUTTON      "Doubles",IDC_DOUBLE,245,77,54,17
+    PUSHBUTTON      "Structs",IDC_STRUCT,245,96,54,17
+    PUSHBUTTON      "Sections",IDC_SECTION,245,115,54,17
+    PUSHBUTTON      "Keys",IDC_KEYS,245,134,54,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_INIDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "IniDemo MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "IniDemo\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "IniDemo.EXE\0"
+            VALUE "ProductName", "IniDemo Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About IniDemo..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\IniDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
